@@ -1,28 +1,18 @@
 <main>
 
-    <div class="todo-list-container">
-        <hr>
-        <form class="add-task">
-            <input class="add-task-input" placeholder="Add Todo">
-            <button class="task-input">Add Task</button>
-        </form>
+    
+    <form>
+        <h2>Add Todo Task</h2>
+        <div>
+            <label for="add-task">Add Task</label>
+            <input [{ngModel}]="add-task" id="add-task" name="add-task" placeholder="Please enter task name">
+        </div>
 
 
-    <div>
-        <div class="done-button">
-            <p>Task 1</p>
-            <div class="buttons">
-            <button class="task-done-button">Done</button>
-            <button class="task-remove-button">Remove</button>
-        </div>
-        </div>
-        <div class="done-button">
-            <p>Task 2</p>
-            <div class="buttons">
-            <button class="task-done-button">Done</button>
-            <button class="task-remove-button">Remove</button>
-        </div>
-    </div>
+    </form>
+
+
+
 </main>
 
 
