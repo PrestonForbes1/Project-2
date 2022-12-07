@@ -11,12 +11,7 @@ export class TasksComponent {
   name: string = '';
   date: string = '';
 
-  toDoList: any = [
-    {
-      name: 'Sleep',
-      date: 'ASAP'
-    }
-  ];
+  toDoList: any = [];
 
 
   addToDoTask(): void {

@@ -8,16 +8,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 const routes: Routes = [
 
   {
-    path: '',
-    component: TasksComponent
+    path: 'card',
+    component: CardComponent
   },
   {
     path: 'tasks',
     component: TasksComponent
-  },
-  {
-    path: 'card',
-    component: CardComponent
   },
   {
     path: 'header',
