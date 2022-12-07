@@ -8,4 +8,9 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
 
   @Input() card: any;
+  
+  completeTask(): void {
+
+
+  }
 }

@@ -1,7 +1,9 @@
 <section>
-    <h4>Task Item</h4>
-    <ul>
-        <li>Task Name: {{ card.name }}</li>
-        <li>Task Date: {{ card.date }}</li>
-    </ul>
+
+    <h3>Task Item</h3>
+    
+    <p><strong>Name: </strong>{{ card.name }}</p>
+    <p><strong>Date: </strong>{{ card.date }}</p>
+    
+    <button (click)="completeTask()">Remove Task</button>
 </section>

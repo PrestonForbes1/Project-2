@@ -20,4 +20,8 @@ export class TasksComponent {
 
     this.toDoList.push(newToDoItem);
   }
+  
+  // removeToDoTask(): void {
+  //   this.toDoList.
+  // }
 }
