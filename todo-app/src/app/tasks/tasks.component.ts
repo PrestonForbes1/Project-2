@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
-import { Card } from ''
+import { Component } from '@angular/core';
+import { Card } from '../models/card';
+
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
@@ -9,17 +9,20 @@ import { Card } from ''
 export class TasksComponent {
   
   name: string = '';
-  date: string '';
+  date: string = '';
 
-  todoList: any = [];
-
+  toDoList: any = [
+    {
+      name: 'Sleep',
+      date: 'ASAP'
+    }
+  ];
 
 
   addToDoTask(): void {
 
-    const newToDoItem: Card = new CardComponent(this.nameToDo, this.date);
+    const newToDoItem: Card = new Card(this.name, this.date);
 
-    this.todoList.push(newToDoItem)
+    this.toDoList.push(newToDoItem)
   }
-
 }

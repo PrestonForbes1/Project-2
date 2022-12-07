@@ -1,12 +1,12 @@
 export class Card {
 
     // properties
-    nameToDo: string;
-    isCompleted: boolean;
+    name: string;
+    date: string;
 
 
-    constructor(nameToDo: string, isCompleted: boolean) {
-        this.nameToDo = nameToDo;
-        this.isCompleted = isCompleted;
+    constructor(name: string, date: string) {
+        this.name = name;
+        this.date = date;
     }
 }

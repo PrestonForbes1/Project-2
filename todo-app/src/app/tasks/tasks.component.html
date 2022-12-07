@@ -5,20 +5,21 @@
         <h2>Active Tasks</h2>
         <div>
             <label for="add-task"></label>
-            <input id="add-task" name="add-task" placeholder="Please enter task name">
-        
-
-            <button (click)="addToDoTask(); signCreationForm.reset">Add ToDo Task</button>
+            <input [(ngModel)]="name" id="add-task" name="add-task" placeholder="Please enter task name">
         </div>
 
         <div> 
             <h2>Completed Tasks</h2>
         </div>
 
+        <p>Name: {{ name }}</p>
+        <p>Date: {{ date }}</p>
+
+        <button (click)="addToDoTask()">Add ToDo Task</button>
 
     </form>
 
-    <ng-container *ngFor="let card of tasks">
+    <ng-container *ngFor="let card of toDoList">
         <app-card [card]="card" ></app-card>
     </ng-container>
 
