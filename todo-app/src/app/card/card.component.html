@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <section>
 
     <h2>Task Item</h2>
@@ -5,7 +6,7 @@
     <p><strong>Name: </strong>{{ card.name }}</p>
     <p><strong>Date: </strong>{{ card.date }}</p>
     
-    <button (click)="completeTask()">Complete Task</button>
-    <button (click)="removeTask()">Remove Task</button>
+    <button class="complete-button" (click)="completeTask()"><i class="fa fa-close" Task></i>Complete Task</button>
+    <button class="remove-button" (click)="removeTask()"><i class="fa fa-trash"></i> Remove Task</button>
 
 </section>
