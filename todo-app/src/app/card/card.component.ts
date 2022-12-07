@@ -10,7 +10,9 @@ export class CardComponent {
   @Input() card: any;
   
   completeTask(): void {
+  }
 
-
+  removeTask(): void {
+    
   }
 }

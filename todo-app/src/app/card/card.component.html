@@ -1,9 +1,11 @@
 <section>
 
-    <h3>Task Item</h3>
+    <h2>Task Item</h2>
     
     <p><strong>Name: </strong>{{ card.name }}</p>
     <p><strong>Date: </strong>{{ card.date }}</p>
     
-    <button (click)="completeTask()">Remove Task</button>
+    <button (click)="completeTask()">Complete Task</button>
+    <button (click)="removeTask()">Remove Task</button>
+
 </section>
