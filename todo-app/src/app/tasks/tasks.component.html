@@ -2,25 +2,21 @@
 
     
     <form #taskCreationForm>
-        <h2>Add Task</h2>
-        <div>
-            <label for="add-task-name"></label>
-            <input [(ngModel)]="name" id="add-task-name" name="add-task-name" placeholder="Please enter task name">
-        </div>
-        <div>
-            <label for="add-task-date"></label>
-            <input [(ngModel)]="date" id="add-task-date" name="add-task-date" placeholder="Please enter task date">
+        <div><h2>Add Task</h2>
+            <div>
+                <label for="add-task-name"></label>
+                <input [(ngModel)]="name" id="add-task-name" name="add-task-name" placeholder="Please enter task name">
+            </div>
+            <div>
+                <label for="add-task-date"></label>
+                <input [(ngModel)]="date" id="add-task-date" name="add-task-date" placeholder="Please enter task date">
+            </div>
+            <button (click)="addToDoTask(); taskCreationForm.reset()">Add ToDo Task</button>
         </div>
 
         <div> 
             <h2>Active Tasks</h2>
         </div>
-
-        <p>Name: {{ name }}</p>
-        <p>Date: {{ date }}</p>
-
-        <button (click)="addToDoTask(); taskCreationForm.reset()">Add ToDo Task</button>
-
     </form>
 
     <ng-container *ngFor="let card of toDoList">

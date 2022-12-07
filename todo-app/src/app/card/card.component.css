@@ -7,10 +7,6 @@ section {
     border: solid 1px black;
 }
 
-section ul li:first-of-type {
-    font-weight: bold;
-    text-transform: uppercase;
-}
 
 
 
