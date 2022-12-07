@@ -6,7 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
-
+  
   {
     path: 'card',
     component: CardComponent
