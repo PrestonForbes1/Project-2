@@ -4,9 +4,10 @@ h2 {
     padding: 0px 435px;
 }
 
-main {
+form {
     border: 2px solid black;
-    margin: 0 300px;
+    margin-bottom: 20px;
+
 }
 
 input {
@@ -17,3 +18,15 @@ input {
     display: flex;
     justify-content: end;
 }
+
+.task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* .active-tasks-container {
+ 
+    
+} */
