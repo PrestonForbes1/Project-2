@@ -23,6 +23,6 @@ export class TasksComponent {
 
     const newToDoItem: Card = new Card(this.name, this.date);
 
-    this.toDoList.push(newToDoItem)
+    this.toDoList.push(newToDoItem);
   }
 }

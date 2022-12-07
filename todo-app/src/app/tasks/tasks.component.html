@@ -1,11 +1,15 @@
 <main>
 
     
-    <form>
+    <form #taskCreationForm>
         <h2>Active Tasks</h2>
         <div>
-            <label for="add-task"></label>
-            <input [(ngModel)]="name" id="add-task" name="add-task" placeholder="Please enter task name">
+            <label for="add-task-name"></label>
+            <input [(ngModel)]="name" id="add-task-name" name="add-task-name" placeholder="Please enter task name">
+        </div>
+        <div>
+            <label for="add-task-date"></label>
+            <input [(ngModel)]="date" id="add-task-date" name="add-task-date" placeholder="Please enter task date">
         </div>
 
         <div> 
@@ -15,7 +19,7 @@
         <p>Name: {{ name }}</p>
         <p>Date: {{ date }}</p>
 
-        <button (click)="addToDoTask()">Add ToDo Task</button>
+        <button (click)="addToDoTask(); taskCreationForm.reset()">Add ToDo Task</button>
 
     </form>
 

@@ -12,15 +12,15 @@ const routes: Routes = [
     component: CardComponent
   },
   {
-    path: 'home',
+    path: 'task',
     component: TasksComponent
   },
   {
-    path: 'form',
+    path: 'header',
     component: HeaderComponent
   },
   {
-    path: 'deck',
+    path: 'navbar',
     component: NavbarComponent
   }
 
