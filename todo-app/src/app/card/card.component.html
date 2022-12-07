@@ -6,7 +6,10 @@
     <p><strong>Name: </strong>{{ card.name }}</p>
     <p><strong>Date: </strong>{{ card.date }}</p>
     
-    <button class="complete-button" (click)="completeTask()"><i class="fa fa-close" Task></i>Complete Task</button>
-    <button class="remove-button" (click)="removeTask()"><i class="fa fa-trash"></i> Remove Task</button>
+    <div>
+        <button class="complete-button" (click)="completeTask()"><i class="fa fa-close" Task></i>Complete Task</button>
+        <button class="remove-button" (click)="removeTask()"><i class="fa fa-trash"></i> Remove Task</button>
+        <button class="edit-button" (click)="editTask()"><i class="fa pen-to-square">Edit Task</i></button>
+    </div>
 
 </section>

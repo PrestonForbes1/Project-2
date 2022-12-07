@@ -13,6 +13,9 @@ export class CardComponent {
   }
 
   removeTask(): void {
-    
+
+  }
+  editTask(): void {
+
   }
 }
