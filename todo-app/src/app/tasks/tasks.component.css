@@ -1,0 +1,19 @@
+h2 {
+    display: flex;
+    justify-content: left;
+    padding: 0px 435px;
+}
+
+main {
+    border: 2px solid black;
+    margin: 0 300px;
+}
+
+input {
+    width: 400px;
+}
+
+.add-container {
+    display: flex;
+    justify-content: end;
+}
