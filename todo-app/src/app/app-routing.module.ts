@@ -9,11 +9,15 @@ const routes: Routes = [
 
   {
     path: '',
-    component: CardComponent
+    component: TasksComponent
   },
   {
-    path: 'task',
+    path: 'tasks',
     component: TasksComponent
+  },
+  {
+    path: 'card',
+    component: CardComponent
   },
   {
     path: 'header',
