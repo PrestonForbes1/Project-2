@@ -1,18 +1,18 @@
 h2 {
-    display: flex;
-    justify-content: left;
-    padding: 0px 435px;
+    padding: 0px 200px;
 }
 
 form {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-bottom: 20px;
-
+    display: flex;
+    padding-left: 275px;
+    padding-top: 20px;
 }
 
-input {
-    width: 400px;
-}
+/* input {
+    width:1;
+} */
 
 .add-container {
     display: flex;
@@ -26,7 +26,8 @@ input {
     
 }
 
-/* .active-tasks-container {
- 
-    
-} */
+.active-tasks-container {
+ width: 50%;
+ height: auto;
+ display: flex;
+}
