@@ -1,46 +1,52 @@
 section {
-    background-color: lightgray;
+    background-image: linear-gradient(180deg, rgb(0, 119, 255), rgb(116, 116, 59));
     border-radius: 8px;
     padding: 20px 20px 20px 40px;
     width: 150px;
     margin-bottom: 10px;
-    border: solid 1px black;
+    border: solid 2px black;
 }
 
- 
  .edit-button {
     background-color: dodgerblue;
     border: none; 
     color: white; 
-    padding: 12px 16px; 
+    padding: 6px 10px; 
     font-size: 16px; 
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
     }
 
 .remove-button {
     background-color: rgb(209, 65, 84);
     border: none; 
     color: white; 
-    padding: 12px 16px; 
-    font-size: 16px; 
+    padding: 6px 10px; 
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
     }
+
 .complete-button {
     background-color: dodgerblue;
     border: none; 
     color: white; 
-    padding: 12px 16px; 
-    font-size: 16px; 
+    padding: 6px 10px; 
+    font-size: 12px; 
     cursor: pointer;
-    font-size: 14px;
     }    
 
-    
-.btn:hover {
+.complete-button:hover {
+    color: blue;
+    }
+
+.remove-button:hover {
     color: blue;
     } 
+
+.edit-button:hover {
+    color: blue;
+    } 
+             
 
 
 
