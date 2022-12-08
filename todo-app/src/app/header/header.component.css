@@ -4,7 +4,7 @@
     background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);
     padding: 20px 0px;
     color: white;
-    margin: 0px 300px;
+    /* margin: 0px 300px; */
     margin-top: 100px;
     border-radius:  10px 10px 0px 0px;
 }
