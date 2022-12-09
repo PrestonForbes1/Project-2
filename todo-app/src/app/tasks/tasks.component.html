@@ -1,36 +1,87 @@
 <main>
-
-    
-    <form #taskCreationForm>
+    <!-- Start Input Task Section -->
+    <!-- <form #taskCreationForm>
         <div>
             <div class="add-container">
                 <label for="add-task-name"></label>
-                <input [(ngModel)]="name" id="add-task-name" name="add-task-name" placeholder="New Task">
-            
-      
+                <input [(ngModel)]="name" id="add-task-name" name="add-task-name" placeholder="New Task">  
                 <button (click)="addToDoTask(); taskCreationForm.reset()">Add ToDo Task</button>
              </div>
         </div>
+    </form> -->
+    <!-- End Input Task Section -->
 
+    
+    <!-- <section class="active-tasks">
+
+        <h1>Active Tasks</h1>
+
+        <ng-container *ngFor="let card of toDoList; index as i">
+            <app-card [card]="card" ></app-card>
+            
+        </ng-container>
+
+        <p><strong>Task: </strong>{{ this.name }}</p>
         
-    </form>
+    </section>
 
-    <div class="task-container">
+    <section class="completed-tasks">
 
-        <div class="active-tasks-container">
-            <h2>Active Tasks</h2>
+        <h1>Completed Tasks</h1>
+
+        <ng-container *ngFor="let value of completedToDoList; index as i">
+            <p class="asdsd" [ngClass]="{'remove': value.isCompleted}">{{ value.name }}</p>
+            <button class="flex-no-shrink p-2 ml-4 mr-2 border-2 rounded  text-green border-green hover:bg-green" (click)="removeTask(value)">Done</button>
+        </ng-container>
+       
+
+        <p><strong>Task: </strong>{{ this.name }}</p>
+        
+    </section> -->
+
+
+
+    <div class="">
+        <div class="">
+
+            <!-- Add Task Button Section -->
+            <div id="add-task-container">
+                <form #taskCreationForm [formGroup]="newTodoForm" id="" (ngSubmit)="addToDoTask()">
+                    <div class="input-field">
+                        <label for="todo-input"><h3>To Do List</h3></label>
+                        <input type="text" name="todo-input" id="todo-input" class="" placeholder="Add task" formControlName="todoItem">
+                        <button type="submit" class="btn-add">Add</button>
+                    </div>
+                </form>
+            </div>
+            <!-- End Task Button Section -->
+
+            <!-- Active task Section -->
+            <div class="task-container">
+                <div class="active-tasks">
+                    <h2>Active Tasks</h2>
+                    <div class="active-tasks" *ngFor="let value of toDoList; index as i">
+                        <div class="task-name">Name: {{ value.name }}
+                        </div>
+                        <button class="f" (click)="completeActiveTask(value, i)">Done</button>
+                        <button class="" (click)="removeActiveTask(i)">Remove</button>
+                    </div>
+                </div>
+                <!-- End Active Task Section -->
+
+                <!-- Completed Task Section -->
+                <div class="completed-tasks">
+                    <h2>Completed Tasks</h2>
+                    <div class="completed-tasks" *ngFor="let value of completedToDoList; index as i">
+                        <div class="task-name">Name: {{ value.name }}
+                        </div>
+                        <button class="" (click)="removeCompletedTask(i)">Remove</button>
+                    </div>
+                </div>
+            </div>    
+            <!-- End Completed Task Section -->
         </div>
-
-        <div class="completed-tasks-container">
-            <h2>Completed Tasks</h2>
-        </div>
-
     </div>
-
-    <ng-container *ngFor="let card of toDoList">
-        <app-card [card]="card" ></app-card>
-    </ng-container>
-
 </main>
 
 

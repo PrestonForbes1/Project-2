@@ -1,36 +1,46 @@
-h2 {
-    padding: 0px 200px;
-}
-
-form {
-    /* border: 2px solid black; */
-    margin-bottom: 20px;
+#add-task-container {
     display: flex;
-    padding-left: 275px;
-    padding-top: 20px;
-}
-
-/* input {
-    width:1;
-} */
-
-.add-container {
-    display: flex;
-    justify-content: end;
-}
-
-.task-container {
-    display: flex;
+    border: 3px;
+    outline: 3px outset black;
+    border-radius: 5px;
+    width: 80vh;
+    height: 25vh;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
-    width: 100%;
-    height: auto;
-    padding: 0px 100px;
+    margin: 20px;
+    background: #eee;
+    border: 20px solid transparent;
+    -moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+    border-image-slice: 1;
+    padding: 10px;
+    margin: 10px;
 }
 
-.active-tasks-container {
- width: 50%;
- height: auto;
- display: flex;
+#add-task-container h3 {
+    color:black
 }
+
+.btn-add {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+    margin: 5px;
+    padding: 5px;
+}
+
+.btn-add:hover {
+    color: #3a4ed5;
+}
+
+.active-tasks {
+   
+}
+
+.completed-tasks {
+   
+}
+

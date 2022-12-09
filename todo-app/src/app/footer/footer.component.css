@@ -1,0 +1,24 @@
+/* footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);
+    height: auto;
+    width: 100vw;
+    padding: 10px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+} */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }

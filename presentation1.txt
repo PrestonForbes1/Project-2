@@ -1,0 +1,17 @@
+Presentation
+
+I. Intro
+
+- Hello, yada yada
+
+II. Functionality/TypeScript/Code Showing
+
+- Components / Page Layout
+- Button functionality
+- where problems occurred
+- what we hope to accomplish in the future
+
+III. CSS
+
+- 
+- 

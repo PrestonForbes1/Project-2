@@ -2,11 +2,10 @@ export class Card {
 
     // properties
     name: string;
-    date: string;
+    isCompleted: boolean = false;
 
 
-    constructor(name: string, date: string) {
+    constructor(name: string) {
         this.name = name;
-        this.date = date;
     }
 }
