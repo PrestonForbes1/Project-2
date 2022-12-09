@@ -30,11 +30,7 @@ II. Functionality/TypeScript/Code Showing
 	- future functionality will include an edit button for both active tasks and
 	- completed tasks
 	- more properties such as subtasks, time allocation, due date, etc can be implemented
-
-- Button functionality
-- where problems occurred
-- what we hope to accomplish in the future
-
+	- some graphic that displays events/progress over time
 III. CSS
 
 - 
