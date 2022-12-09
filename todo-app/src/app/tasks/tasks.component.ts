@@ -52,8 +52,8 @@ export class TasksComponent implements OnInit {
     this.completedToDoList.splice(i, 1)
   }
 
-  editActiveTask(): void {
-
+  editActiveTask(value: any, i: any): void {
+    // this.toDoList.splice()
   }
 
   editCompletedTask(): void {
