@@ -2,11 +2,35 @@ Presentation
 
 I. Intro
 
-- Hello, yada yada
+- Good afternoon everyone. Yada Yada
 
 II. Functionality/TypeScript/Code Showing
 
-- Components / Page Layout
+- Components/Structure
+	--
+
+	- Used Forms and ReactiveForms module
+	- ngSubmit triggers addToDoTask() method which collects the value of
+	- the input element and stores it in a variable named value
+	- used the length property to assign an ID
+	- both properties get pushed/appended to an array activeTasks
+	- the input element is reset
+
+	- In order to display the activeTaskList, an *ngFor loop is used to iterate through
+	- the List
+
+	- the done button calls the method completeActiveTask()
+	- a boolean isCompleted is defined and changes to true when button is clicked
+	- task item is removed from list using splice() and removeActiveTask() is called and item being removed gets
+	- added to completed task list
+
+	- remove task methods are called when the delete button is clicked
+	- item gets removed using slice()
+
+	- future functionality will include an edit button for both active tasks and
+	- completed tasks
+	- more properties such as subtasks, time allocation, due date, etc can be implemented
+
 - Button functionality
 - where problems occurred
 - what we hope to accomplish in the future
