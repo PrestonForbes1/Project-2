@@ -1,46 +1,4 @@
 <main>
-    <!-- Start Input Task Section -->
-    <!-- <form #taskCreationForm>
-        <div>
-            <div class="add-container">
-                <label for="add-task-name"></label>
-                <input [(ngModel)]="name" id="add-task-name" name="add-task-name" placeholder="New Task">  
-                <button (click)="addToDoTask(); taskCreationForm.reset()">Add ToDo Task</button>
-             </div>
-        </div>
-    </form> -->
-    <!-- End Input Task Section -->
-
-    
-    <!-- <section class="active-tasks">
-
-        <h1>Active Tasks</h1>
-
-        <ng-container *ngFor="let card of toDoList; index as i">
-            <app-card [card]="card" ></app-card>
-            
-        </ng-container>
-
-        <p><strong>Task: </strong>{{ this.name }}</p>
-        
-    </section>
-
-    <section class="completed-tasks">
-
-        <h1>Completed Tasks</h1>
-
-        <ng-container *ngFor="let value of completedToDoList; index as i">
-            <p class="asdsd" [ngClass]="{'remove': value.isCompleted}">{{ value.name }}</p>
-            <button class="flex-no-shrink p-2 ml-4 mr-2 border-2 rounded  text-green border-green hover:bg-green" (click)="removeTask(value)">Done</button>
-        </ng-container>
-       
-
-        <p><strong>Task: </strong>{{ this.name }}</p>
-        
-    </section> -->
-
-
-
     <div class="">
         <div class="">
 
@@ -65,7 +23,11 @@
                         </div>
                         <button class="f" (click)="completeActiveTask(value, i)">Done</button>
                         <button class="" (click)="removeActiveTask(i)">Remove</button>
-                        <button class="" (click)="editActiveTask">Edit</button>
+                        <button (click)="editActiveTask(i)">Edit</button>
+                        <ng-container *ngIf="toDoList[i].showEditActiveTaskInput">
+                            <label for="edit-active-task"></label>
+                        <input type="text" name="edit-active-task" id="edit-active-task" placeholder="Add task">
+                        </ng-container>
                     </div>
                 </div>
                 <!-- End Active Task Section -->
@@ -77,6 +39,11 @@
                         <div class="task-name">Name: {{ value.name }}
                         </div>
                         <button class="" (click)="removeCompletedTask(i)">Remove</button>
+                        <button class="" (click)="editCompletedTask(i)">Edit</button>
+                        <ng-container *ngIf="toDoList[i].showEditCompletedTaskInput">
+                            <label for="edit-completed-task"></label>
+                        <input type="text" name="edit-completed-task" id="edit-completed-task" placeholder="Add task">
+                        </ng-container>
                     </div>
                 </div>
                 <!-- End Completed Task Section -->

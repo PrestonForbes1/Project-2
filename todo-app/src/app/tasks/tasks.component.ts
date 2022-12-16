@@ -15,23 +15,22 @@ export class TasksComponent implements OnInit {
   @Input() card: any;
   name: string = '';
   isCompleted: boolean = false;
+  showEditCompletedTaskInput: boolean = false;
+  
+  
   toDoList: any = [];
   completedToDoList: any = [];
   newTodoForm = this.formBuilder.group({
-    todoItem: ''
+    todoItem: '',
+    isCompleted: false,
+    showEditActiveTaskInput: false
   });
 
   constructor(
     private formBuilder: FormBuilder
   ) {}
 
-
   addToDoTask(): void {
-
-    // created Card object to potentially have more properties than name in the future
-    // const newToDoItem: Card = new Card(this.name);
-    // const newToDoItem: Card = new Card
-
     const value = this.newTodoForm.value.todoItem;
     this.toDoList.push({ name: value, id: this.toDoList.length });
     this.newTodoForm.reset();
@@ -49,16 +48,18 @@ export class TasksComponent implements OnInit {
   }
 
   removeCompletedTask(i: any): void {
-    this.completedToDoList.splice(i, 1)
+    this.completedToDoList.splice(i, 1);
   }
 
-  editActiveTask(value: any, i: any): void {
-    // this.toDoList.splice()
+  editActiveTask(i: any): void {
+    // this.toDoList.splice(this.toDoList.indexOf(value)
+    // if 
+    // this.newTodoForm.value.showEditActiveTaskInput = !this.newTodoForm.value.showEditActiveTaskInput;
+    this.toDoList[i].showEditActiveTaskInput = !this.toDoList[i].showEditActiveTaskInput
   }
 
-  editCompletedTask(): void {
-
+  editCompletedTask(i: any): void {
+    this.toDoList[i].showEditCompletedTaskInput = !this.toDoList[i].showEditCompletedTaskInput
   }
-  
   
 }

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { EditService } from '../edit.service'; 
 
 @Component({
   selector: 'app-card',
@@ -8,6 +9,8 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
 
   @Input() card: any;
+
+  constructor(private edit: EditService) {}
   
   completeTask(): void {
   }
