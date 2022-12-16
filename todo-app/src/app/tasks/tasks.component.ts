@@ -52,14 +52,14 @@ export class TasksComponent implements OnInit {
   }
 
   editActiveTask(i: any): void {
-    // this.toDoList.splice(this.toDoList.indexOf(value)
-    // if 
-    // this.newTodoForm.value.showEditActiveTaskInput = !this.newTodoForm.value.showEditActiveTaskInput;
-    this.toDoList[i].showEditActiveTaskInput = !this.toDoList[i].showEditActiveTaskInput
+    this.toDoList[i].showEditActiveTaskInput = !this.toDoList[i].showEditActiveTaskInput;
   }
 
-  editCompletedTask(i: any): void {
-    this.toDoList[i].showEditCompletedTaskInput = !this.toDoList[i].showEditCompletedTaskInput
+  editCompletedTask(value: any, i: any): void {
+    this.completedToDoList.splice(this.completedToDoList.indexOf(value), 1, value);
+    this.toDoList[i].showEditCompletedTaskInput = !this.toDoList[i].showEditCompletedTaskInput;
   }
-  
+  showCompletedTaskInput(i: any): void {
+    this.toDoList[i].showEditCompletedTaskInput = !this.toDoList[i].showEditCompletedTaskInput;
+  }
 }

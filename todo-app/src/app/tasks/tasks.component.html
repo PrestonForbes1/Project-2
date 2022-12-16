@@ -39,10 +39,21 @@
                         <div class="task-name">Name: {{ value.name }}
                         </div>
                         <button class="" (click)="removeCompletedTask(i)">Remove</button>
-                        <button class="" (click)="editCompletedTask(i)">Edit</button>
+                        <button class="" (click)="showCompletedTaskInput(i)">Edit</button>
                         <ng-container *ngIf="toDoList[i].showEditCompletedTaskInput">
-                            <label for="edit-completed-task"></label>
-                        <input type="text" name="edit-completed-task" id="edit-completed-task" placeholder="Add task">
+                            <form #taskCreationForm [formGroup]="newTodoForm" id="" (ngSubmit)="editCompletedTask(value, i)">
+                                <div class="input-field">
+                                    <label for="todo-input"><p>Edit Task<p></label>
+                                    <input type="text" name="todo-input" id="todo-input" class="" placeholder="Edit Task Name" formControlName="todoItem">
+                                    <button (click)="editCompletedTask(value, i)" type="submit" class="btn-add">Add</button>
+                                </div>
+                            </form>
+                                <!-- <div class="edit-input-field">
+                                    <label for="edit-todo-input"><p>Edit Task</p></label>
+                                    <input type="text" name="edit-todo-input" id="edit-todo-input" class="" placeholder="Edit task">
+                                    <button (click)="editCompletedTask(value, i)" type="submit" class="btn-add">Edit</button>
+                                </div> -->
+                            
                         </ng-container>
                     </div>
                 </div>
